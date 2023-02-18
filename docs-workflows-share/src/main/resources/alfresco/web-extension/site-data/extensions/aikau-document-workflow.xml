@@ -1,0 +1,47 @@
+<extension>
+    <modules>
+        <module>
+            <id>Aikau Document Workflow Configuration Template</id>
+            <version>1.0</version>
+            <auto-deploy>true</auto-deploy>
+            <configurations>
+
+                <config evaluator="string-compare" condition="WebFramework" replace="false">
+                    <web-framework>
+                        <dojo-pages>
+                            <packages>
+                                <package name="dam" location="resources/docs-workflows-share/js/dam"/>
+                            </packages>
+                        </dojo-pages>
+                    </web-framework>
+                </config>
+
+                <!-- Document Library Actions config section -->
+                <config evaluator="string-compare" condition="DocLibActions">
+                    <actions>
+                        <action id="aikau-document-workflow" icon="document-edit-metadata"  type="pagelink" label="actions.document.aikau-meta-details">
+                            <param name="page">/hdp/ws/aikau-document-workflow?nodeRef={node.nodeRef}</param>
+                            <permissions>
+                                <permission allow="true">Write</permission>
+                            </permissions>
+                            <evaluator negate="true">evaluator.doclib.metadata.isLocked</evaluator>
+                            <evaluator negate="true">evaluator.doclib.action.checkedOutAspect</evaluator>
+                        </action>
+                    </actions>
+                    <actionGroups>
+                        <actionGroup id="document-browse">
+                            <action index="420" id="aikau-document-workflow" subgroup="40" appendEvaluators="true">
+                                <evaluator>evaluator.doclib.action.DocumentEnableInSmartFolder</evaluator>
+                            </action>
+                        </actionGroup>
+                        <actionGroup id="document-details">
+                            <action index="420" id="aikau-document-workflow" subgroup="40" appendEvaluators="true">
+                                <evaluator>evaluator.doclib.action.DocumentEnableInSmartFolder</evaluator>
+                            </action>
+                        </actionGroup>
+                    </actionGroups>
+                </config>
+            </configurations>
+        </module>
+    </modules>
+</extension>

@@ -19,6 +19,7 @@
       <property name="resourceBundles">
          <list>
             <value>alfresco.web-extension.messages.docs-workflows-share</value>
+            <value>alfresco.web-extension.messages.aikau-model</value>
          </list>
       </property>
    </bean>
