@@ -1,3 +1,12 @@
+
+# Document Workflows Alfresco Aikau Page
+
+![workflow-1](screenshots/doc-workflows1.png)
+
+![workflow-1](screenshots/doc-workflows2.png)
+
+![workflow-1](screenshots/doc-workflows3.png)
+
 # Alfresco AIO Project - SDK 4.5
 
 This is an All-In-One (AIO) project for Alfresco SDK 4.5.
