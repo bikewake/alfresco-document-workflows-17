@@ -7,6 +7,16 @@
 
 ![workflow-1](screenshots/doc-workflows3.png)
 
+![workflow-1](screenshots/doc-workflows4.png)
+
+![workflow-1](screenshots/doc-workflows5.png)
+
+![workflow-1](screenshots/doc-workflows6.png)
+
+![workflow-1](screenshots/doc-workflows7.png)
+
+![workflow-1](screenshots/doc-workflows8.png)
+
 # Alfresco AIO Project - SDK 4.5
 
 This is an All-In-One (AIO) project for Alfresco SDK 4.5.
